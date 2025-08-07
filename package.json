@@ -1,13 +1,13 @@
 {
-  "name": "4.5-cp3-blog-web-app",
+  "name": "4.5-cp3-blog-web-app-byteblog",
   "version": "1.0.0",
-  "description": "",
+  "type": "module",
+  "description": "ByteBlog, a simple Node/Express.js blog web app created as part of my web dev Udemy capstone project, allowing users to create, view, edit, and delete posts with responsive styling, no database required.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs"
+  "author": "Lekan Sausdev",
+  "license": "ISC"
 }
