@@ -5,13 +5,22 @@
   "description": "ByteBlog, a simple Node/Express.js blog web app created as part of my web dev Udemy capstone project, allowing users to create, view, edit, and delete posts with responsive styling, no database required.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "Lekan Sausdev",
   "license": "ISC",
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
     "ejs": "^3.1.10",
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
   }
 }

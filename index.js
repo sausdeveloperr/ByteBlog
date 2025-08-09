@@ -11,7 +11,8 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.send('ByteBlog is up and running')
+    // const currentYear = new Date().getFullYear();
+    res.render('index.ejs');
 })
 
 app.listen(port, () => {
