@@ -5,7 +5,7 @@ git push -u origin main */
 import express from 'express';
 
 const app = express();
-const port = 9090;
+const port = 4789;
 
 app.use(express.urlencoded({extended: true}))
 app.use(express.static('public'));
