@@ -49,6 +49,10 @@
             }
         }
         
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
@@ -72,7 +76,7 @@
         }
 
         .pest-gre {
-            border: lightseagreen solid 2px !important;
+            border: rgb(49, 178, 32) solid 2px !important;
         }
         
         .pest-blu {
@@ -125,19 +129,19 @@
 </head>
 <body class="min-h-screen">
     <!-- Navigation -->
-    <nav class="glass-effect sticky top-0 z-50 border-b border-custom pest-gre">
+    <nav class="glass-effect sticky top-0 z-50 border-b border-custom">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center space-x-8">
-                    <h1 class="text-2xl font-bold gradient-text bg-red-500">ByteBlog</h1>
+                    <h1 class="text-2xl font-bold gradient-text">ByteBlog</h1>
                     <div class="hidden md:flex space-x-8">
                         <a href="#" class="text-muted hover:text-primary font-medium transition-colors">Home</a>
-                        <a href="#" class="text-muted hover:text-primary font-medium transition-colors">Articles</a>
+                        <a href="#home-content-grid" class="text-muted hover:text-primary font-medium transition-colors">Articles</a>
                         <a href="#" class="text-muted hover:text-primary font-medium transition-colors">About</a>
                         <a href="#" class="text-muted hover:text-primary font-medium transition-colors">Contact</a>
                     </div>
                 </div>
-                <button class="bg-gradient-to-r from-gray-900 to-gray-700 dark:from-gray-100 dark:to-gray-300 text-white dark:text-gray-900 px-6 py-2 rounded-full font-medium hover:from-gray-800 hover:to-gray-600 dark:hover:from-gray-200 dark:hover:to-gray-400 transition-all duration-300">
+                <button class="bg-gradient-to-r from-gray-900 to-gray-700 dark:from-gray-100 dark:to-gray-300 text-white dark:text-gray-900 px-6 py-2 rounded-full font-medium hover:from-gray-800 hover:to-gray-600 dark:hover:from-gray-200 dark:hover:to-gray-400">
                     Subscribe
                 </button>
             </div>
@@ -145,7 +149,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="py-20 px-6 lg:px-8 pest-red">
+    <section class="py-20 px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-5xl lg:text-6xl font-bold gradient-text mb-6 leading-tight">
                 Thoughtful Writing for the Modern Mind
@@ -154,10 +158,10 @@
                 Discover insights on design, technology, and life through carefully crafted stories that inspire and inform.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <button class="bg-gradient-to-r from-gray-900 to-gray-700 dark:from-gray-100 dark:to-gray-300 text-white dark:text-gray-900 px-8 py-3 rounded-full font-medium hover:from-gray-800 hover:to-gray-600 dark:hover:from-gray-200 dark:hover:to-gray-400 transition-all duration-300">
+                <button class="card-hover bg-gradient-to-r from-gray-900 to-gray-700 dark:from-gray-100 dark:to-gray-300 text-white dark:text-gray-900 px-8 py-3 rounded-full font-medium hover:from-gray-800 hover:to-gray-600 dark:hover:from-gray-200 dark:hover:to-gray-400">
                     Start Reading
                 </button>
-                <button class="border border-custom text-secondary px-8 py-3 rounded-full font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300">
+                <button class="border border-custom text-secondary px-8 py-3 rounded-full font-medium hover:bg-gray-50 dark:hover:bg-gray-800">
                     Learn More
                 </button>
             </div>
@@ -165,13 +169,13 @@
     </section>
 
     <!-- Main Content -->
-    <main class="max-w-7xl mx-auto px-6 lg:px-8 pb-20">
-        <div class="grid lg:grid-cols-4 gap-8">
+    <main id="home-content-grid" class="home-content-grid max-w-7xl mx-auto px-6 lg:px-8 pb-20 pest-red">
+        <div class="grid lg:grid-cols-4 gap-8 pest-gre">
             <!-- Articles Grid -->
-            <div class="lg:col-span-3">
-                <div class="grid md:grid-cols-2 gap-8">
+            <div class="article-grid lg:col-span-3 pest-blu">
+                <div class="articles-wrapper grid md:grid-cols-2 gap-8">
                     <!-- Featured Article -->
-                    <article class="md:col-span-2 bg-card rounded-2xl premium-shadow card-hover overflow-hidden">
+                    <article class="featured-article md:col-span-2 bg-card rounded-2xl premium-shadow card-hover overflow-hidden">
                         <div class="h-64 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-900/20 dark:to-indigo-900/20"></div>
                         <div class="p-8">
                             <div class="flex items-center space-x-4 mb-4">
@@ -186,7 +190,7 @@
                             </p>
                             <div class="flex items-center justify-between">
                                 <div class="flex items-center space-x-3">
-                                    <div class="w-10 h-10 bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-600 dark:to-gray-700 rounded-full"></div>
+                                    <div class="w-10 h-10 bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-600 dark:to-gray-700 rounded-full"><img src="https://picsum.photos/200" alt="" class="article-author rounded-full"></div>
                                     <div>
                                         <p class="font-medium text-primary">Sarah Chen</p>
                                         <p class="text-sm text-muted">Dec 15, 2024</p>
@@ -304,7 +308,7 @@
             </div>
 
             <!-- Sidebar -->
-            <aside class="lg:col-span-1 space-y-8">
+            <aside class="sidebar lg:col-span-1 space-y-8">
                 <!-- About -->
                 <div class="bg-card rounded-2xl premium-shadow p-6">
                     <h3 class="text-lg font-bold text-primary mb-4">About ByteBlog</h3>
