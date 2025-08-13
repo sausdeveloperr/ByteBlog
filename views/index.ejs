@@ -66,10 +66,6 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-
-        .hero-section {
-            border: red solid 2px;
-        }
         
         .pest-red {
             border: red solid 2px !important;
@@ -149,7 +145,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="py-20 px-6 lg:px-8">
+    <section id="hero-section" class="py-20 px-6 lg:px-8">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-5xl lg:text-6xl font-bold gradient-text mb-6 leading-tight">
                 Thoughtful Writing for the Modern Mind
@@ -169,13 +165,13 @@
     </section>
 
     <!-- Main Content -->
-    <main id="home-content-grid" class="home-content-grid max-w-7xl mx-auto px-6 lg:px-8 pb-20 pest-red">
-        <div class="grid lg:grid-cols-4 gap-8 pest-gre">
+    <main id="home-content-grid" class="pest-red max-w-7xl mx-auto px-6 lg:px-8 pb-20">
+        <div class="grid lg:grid-cols-4 gap-8">
             <!-- Articles Grid -->
-            <div class="article-grid lg:col-span-3 pest-blu">
-                <div class="articles-wrapper grid md:grid-cols-2 gap-8">
+            <div class="lg:col-span-3 pest-gre">
+                <div class="grid md:grid-cols-2 gap-8">
                     <!-- Featured Article -->
-                    <article class="featured-article md:col-span-2 bg-card rounded-2xl premium-shadow card-hover overflow-hidden">
+                    <article class="md:col-span-2 bg-card rounded-2xl premium-shadow card-hover overflow-hidden">
                         <div class="h-64 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-900/20 dark:to-indigo-900/20"></div>
                         <div class="p-8">
                             <div class="flex items-center space-x-4 mb-4">
@@ -308,9 +304,9 @@
             </div>
 
             <!-- Sidebar -->
-            <aside class="sidebar lg:col-span-1 space-y-8">
+            <aside id="sidebar" class="lg:col-span-1 space-y-8 pest-blu">
                 <!-- About -->
-                <div class="bg-card rounded-2xl premium-shadow p-6">
+                <div class="bg-card rounded-2xl premium-shadow p-6 pest-gre">
                     <h3 class="text-lg font-bold text-primary mb-4">About ByteBlog</h3>
                     <p class="text-secondary text-sm leading-relaxed mb-4">
                         A curated collection of thoughts on design, technology, and the intersection of creativity and functionality.
@@ -321,7 +317,7 @@
                 </div>
 
                 <!-- Newsletter -->
-                <div class="bg-sidebar rounded-2xl p-6">
+                <div class="bg-sidebar rounded-2xl p-6 pest-blu">
                     <h3 class="text-lg font-bold text-primary mb-2">Stay Updated</h3>
                     <p class="text-secondary text-sm mb-4">
                         Get the latest articles delivered to your inbox.
@@ -335,7 +331,7 @@
                 </div>
 
                 <!-- Popular Tags -->
-                <div class="bg-card rounded-2xl premium-shadow p-6">
+                <div class="bg-card rounded-2xl premium-shadow p-6 pest-gre">
                     <h3 class="text-lg font-bold text-primary mb-4">Popular Topics</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="bg-gray-100 dark:bg-gray-700 text-secondary px-3 py-1 rounded-full text-sm hover:bg-gray-200 dark:hover:bg-gray-600 cursor-pointer transition-colors">Design</span>
@@ -348,7 +344,7 @@
                 </div>
 
                 <!-- Recent Comments -->
-                <div class="bg-card rounded-2xl premium-shadow p-6">
+                <div class="bg-card rounded-2xl premium-shadow p-6 pest-blu">
                     <h3 class="text-lg font-bold text-primary mb-4">Recent Activity</h3>
                     <div class="space-y-4">
                         <div class="flex space-x-3">

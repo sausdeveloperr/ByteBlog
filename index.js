@@ -18,3 +18,4 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     console.log('server running at port', port)
 })
+// git commit --amend -m "New message" - amend the last commit you just dropped
