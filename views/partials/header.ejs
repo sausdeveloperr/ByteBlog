@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteBlog</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style> /* DELETE THIS LINE AFTER FINISHING */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            /* Light mode colors */
+            --bg-primary: #f8fafc;
+            --bg-secondary: #f1f5f9;
+            --bg-card: #ffffff;
+            --bg-glass: rgba(255, 255, 255, 0.8);
+            --bg-glass-border: rgba(255, 255, 255, 0.2);
+            --bg-sidebar: #f9fafb;
+            --text-primary: #1e293b;
+            --text-secondary: #475569;
+            --text-muted: #64748b;
+            --text-light: #94a3b8;
+            --border-color: #e2e8f0;
+            --shadow-color: rgba(0, 0, 0, 0.04);
+            --shadow-hover: rgba(0, 0, 0, 0.08);
+            --gradient-start: #1e293b;
+            --gradient-end: #475569;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            :root {
+                /* Dark mode colors */
+                --bg-primary: #0f172a;
+                --bg-secondary: #1e293b;
+                --bg-card: #1e293b;
+                --bg-glass: rgba(30, 41, 59, 0.8);
+                --bg-glass-border: rgba(255, 255, 255, 0.1);
+                --bg-sidebar: #334155;
+                --text-primary: #f1f5f9;
+                --text-secondary: #cbd5e1;
+                --text-muted: #94a3b8;
+                --text-light: #64748b;
+                --border-color: #334155;
+                --shadow-color: rgba(0, 0, 0, 0.2);
+                --shadow-hover: rgba(0, 0, 0, 0.3);
+                --gradient-start: #f1f5f9;
+                --gradient-end: #cbd5e1;
+            }
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+            color: var(--text-primary);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .pest-red {
+            border: red solid 2px !important;
+        }
+
+        .pest-gre {
+            border: rgb(49, 178, 32) solid 2px !important;
+        }
+        
+        .pest-blu {
+            border: lightskyblue solid 2px !important;
+        }
+        
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px var(--shadow-hover);
+        }
+        
+        .glass-effect {
+            background: var(--bg-glass);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--bg-glass-border);
+        }
+        
+        .premium-shadow {
+            box-shadow: 0 8px 32px var(--shadow-color);
+        }
+        
+        .bg-card {
+            background-color: var(--bg-card);
+        }
+        
+        .bg-sidebar {
+            background-color: var(--bg-sidebar);
+        }
+        
+        .text-primary {
+            color: var(--text-primary);
+        }
+        
+        .text-secondary {
+            color: var(--text-secondary);
+        }
+        
+        .text-muted {
+            color: var(--text-muted);
+        }
+        
+        .border-custom {
+            border-color: var(--border-color);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="glass-effect sticky top-0 z-50 border-b border-custom">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-8">
+                    <h1 class="text-2xl font-bold gradient-text">ByteBlog</h1>
+                    <div class="hidden md:flex space-x-8">
+                        <a href="http://localhost:4789/" class="text-muted hover:text-primary font-medium transition-colors">Home</a>
+                        <a href="http://localhost:4789/#home-content-grid" class="text-muted hover:text-primary font-medium transition-colors">Articles</a>
+                        <a href="#" class="text-muted hover:text-primary font-medium transition-colors">About</a>
+                        <a href="#" class="text-muted hover:text-primary font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <button class="bg-gradient-to-r from-gray-900 to-gray-700 dark:from-gray-100 dark:to-gray-300 text-white dark:text-gray-900 px-6 py-2 rounded-full font-medium hover:from-gray-800 hover:to-gray-600 dark:hover:from-gray-200 dark:hover:to-gray-400">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+    </nav>
