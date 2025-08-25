@@ -20,6 +20,10 @@ app.get('/post', (req, res) => {
     res.render('article.ejs');
 })
 
+app.get('/all-articles', (req, res) => {
+    res.render('all-articles.ejs');
+})
+
 app.get('/copy', (req, res) => {
     res.render('bookmark.ejs');
 })
