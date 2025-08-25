@@ -10,31 +10,34 @@
                 Explore how less can truly be more when crafting user experiences that resonate with modern audiences.
             </p>
             
-            <div class="flex items-center justify-around mb-3 pest-red">
-                <div class="flex items-center space-x-3 pest-gre flex-wrap">
-                    <div class="w-10 h-10 bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-600 dark:to-gray-700 rounded-full">
-                        <img src="images/authors/Sarah Chen.jpg" alt="" class="rounded-full" loading="lazy">
-                    </div>
-
-                    <div >
-                        <p class="font-medium text-primary">Sarah Chen</p>
-                    </div>
-
-                    <button class="border border-custom text-secondary text-sm px-2 py-1 rounded-full font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300">
-                        Follow
-                    </button>
-
-                    <div class="flex items-center gap-5 justify-between mt-3 sm:mt-0">
-                        <span class="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-medium">Featured</span>
-                        <span class="text-muted text-sm">5 min read</span>
-                        <p class="text-sm text-muted">Dec 15, 2024</p>
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
+                <!-- Left side (profile + meta info) -->
+                <div class="sm:mx-auto">
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:space-x-4">
+                        <!-- Avatar + name + follow -->
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-gradient-to-br from-gray-200 to-gray-300 dark:from-gray-600 dark:to-gray-700 rounded-full overflow-hidden">
+                                <img src="images/authors/Sarah Chen.jpg" alt="picture of Sarah Chen" class="rounded-full w-full h-full object-cover" loading="lazy">
+                            </div>
+                            <p class="font-medium text-primary">Sarah Chen</p>
+                            <button class="border border-custom text-secondary text-sm px-2 py-1 rounded-full font-medium hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300">
+                                Follow
+                            </button>
+                        </div>
+                        <!-- Meta info (Featured, read time, date) -->
+                        <div class="flex items-center gap-5 mt-3 sm:mt-0">
+                            <span class="bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 px-3 py-1 rounded-full text-sm font-medium">Featured</span>
+                            <span class="text-muted text-sm">5 min read</span>
+                            <p class="text-sm text-muted">Dec 15, 2024</p>
+                            <!-- Right side (bookmark button) -->
+                            <button class="text-muted hover:text-secondary transition-colors ml-auto mr-5">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <button class="pest-blu card-hover text-muted hover:text-secondary transition-colors">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path>
-                    </svg>
-                </button>
             </div>
         </div>
     </section>
