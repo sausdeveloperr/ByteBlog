@@ -1,7 +1,7 @@
 /* git add .
 git commit -m "msg"
 git push -u origin main */
-// git commit --amend -m "New message" - amend the last commit you just dropped
+// git commit --amend -m "New message" - amend the last commit dropped
 
 import express from 'express';
 
@@ -11,7 +11,7 @@ const port = 4789;
 app.use(express.urlencoded({extended: true}))
 app.use(express.static('public'));
 
-// const currentYear = new Date().getFullYear();
+
 app.get('/', (req, res) => {
     res.render('home.ejs');
 })
