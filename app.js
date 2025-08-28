@@ -16,16 +16,16 @@ app.get('/', (req, res) => {
     res.render('home.ejs');
 })
 
-app.get('/post', (req, res) => {
-    res.render('article.ejs');
+app.get('/view-article', (req, res) => {
+    res.render('view-article.ejs');
 })
 
 app.get('/all-articles', (req, res) => {
     res.render('all-articles.ejs');
 })
 
-app.get('/copy', (req, res) => {
-    res.render('bookmark.ejs');
+app.get('/create', (req, res) => {
+    res.render('create.ejs');
 })
 
 app.listen(port, () => {
