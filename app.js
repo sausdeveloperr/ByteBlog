@@ -4,6 +4,8 @@ git push -u origin main */
 // git commit --amend -m "New message" - amend the last commit dropped
 
 import express from 'express';
+// import seedPosts from './data/seedPosts'; This
+// import { seedPosts } from './data/seedPosts'; or That?
 
 const app = express();
 const port = 4789;
@@ -17,6 +19,8 @@ app.get('/', (req, res) => {
 })
 
 app.get('/view-article', (req, res) => {
+    // const mockPosts = seedPosts;
+
     res.render('view-article.ejs');
 })
 
