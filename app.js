@@ -32,6 +32,15 @@ app.get('/create', (req, res) => {
     res.render('create.ejs');
 })
 
+// aux pages
+app.get('/about', (req, res) => {
+    res.render('about.ejs');
+})
+
+app.get('/contact', (req, res) => {
+    res.render('contact.ejs');
+})
+
 app.listen(port, () => {
     console.log('server running at port', port)
 })

@@ -4,3 +4,22 @@
     onclick, app.js renders processed post into article.ejs for viewing. This created post
     will have an 'update post' button to modify post
 -->
+
+<%- include('partials/header.ejs') %>
+
+    <!-- Main Content -->
+    <main id="home-content-grid" class="h-full max-w-7xl mx-auto mt-8 px-6 lg:px-8 pb-20">
+        <div class="grid lg:grid-cols-4 gap-8">
+            <!-- content grid, change classes -->
+            <div class="lg:col-span-3 ">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <h1 class="page-name">CREATE POST PAGE</h1>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <%- include('partials/sidepane.ejs') %>
+        </div>
+    </main>
+
+<%- include('partials/footer.ejs') %>
